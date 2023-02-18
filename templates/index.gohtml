@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>MORNING CHECK</title>
+  <style>
+  input {
+    width: 100%;
+    padding: 8px 16px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+    body {
+    background-color: lightgreen;
+  }
+  
+  </style>
+
+</head>
+<body>
+
+    <form action="/process" method="POST">
+        <label for="fname">check zabbix:</label><br>
+        <input type="text" id="fname" name="zabbix" value="All OK"><br>
+        <label for="fname">check haproxy:</label><br>
+        <input type="text" id="fname" name="haproxy" value="All OK"><br>
+        <label for="fname">check the status of the Jobs for tabular:</label><br>
+        <input type="text" id="fname" name="tabularjobs" value="All OK"><br>
+        <label for="fname">check last refresh on CELL:</label><br>
+        <input type="text" id="fname" name="lastcell" value="All OK"><br>
+        <label for="fname">check the refresh on both KOBRA and PHILIPS:</label><br>
+        <input type="text" id="fname" name="lastkobraphilips" value="All OK"><br>
+        <label for="fname">check the Session_CPU_TIME_MS:</label><br>
+        <input type="text" id="fname" name="sessioncpu" value="All OK"><br>
+        <label for="fname">check grafana tabular:</label><br>
+        <input type="text" id="fname" name="grafana" value="All OK"><br>
+        <label for="fname">check tickets in Jira:</label><br>
+        <input type="text" id="fname" name="jira" value="All OK"><br>
+        <label for="fname">check DELL Storage:</label><br>
+        <input type="text" id="fname" name="dell" value="All OK"><br>
+        <input type="submit" value="Send Email">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+services:
+  morning-check:
+    image: ruiarmada/morning-check:test
+    build:
+      context: .
+      dockerfile: build/Dockerfile
+    ports:
+      - 8080:8080
